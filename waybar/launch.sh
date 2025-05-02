@@ -15,11 +15,12 @@ HOSTNAME=$(uname -n)
 
 # Quit existing waybar instances
 killall waybar
+sleep 0.2
 
 # Sets config path based on hostname
 case "$HOSTNAME" in
 "fortuna")
-  CONFIG=~/dotfiles/waybar/fortuna_config
+  CONFIG=~/dotfiles/waybar/fortuna_config.jsonc
   ;;
 "leviathan")
   CONFIG=~/dotfiles/waybar/leviathan_config

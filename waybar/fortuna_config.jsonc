@@ -1,0 +1,37 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "bottom",
+  "position": "top", // Position (top|bottom|left|right)
+  "height": 30, // Leave blank for dynamic value
+  // "width": 1920, // Leave blank for dynamic value
+  
+  // Modules Configuration
+  "include": ["~/dotfiles/waybar/modules.json"],
+
+  // Module division
+  // Left Modules
+  "modules-left": [],
+
+  // Center Modules
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  // Right Modules
+  "modules-right": [
+    "group/hardware",
+    "custom/exit",
+    "network",
+    "clock",
+  ],
+
+  // Hardware Module Group
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+      "disk",
+      "cpu",
+      "memory"
+    ]
+  }
+}
