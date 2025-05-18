@@ -1,0 +1,55 @@
+* {
+  font-family: JetBrainsMono Nerd Font, sans-serif;
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: #FFFFFF;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#pulseaudio {
+  margin: 0 10px;
+  padding: 0 6px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+#pulseaudio:hover {
+  background-color: #C0C0C0;
+}
+
+#hardware {
+  margin: 0 10px;
+  padding: 0 6px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+#custom-exit {
+  margin: 0 10px;
+  padding: 0 6px;
+  border: 1px solid;
+  border-radius: 10px;
+  min-width: 50px;
+}
+
+#network {
+  margin: 0 10px;
+  padding: 0 6px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+#clock {
+  margin: 0 10px;
+  padding: 0 6px;
+  border: 1px solid;
+  border-radius: 10px;
+}

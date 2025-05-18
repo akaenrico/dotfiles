@@ -20,10 +20,10 @@ sleep 0.2
 # Sets config path based on hostname
 case "$HOSTNAME" in
 "fortuna")
-  CONFIG=~/dotfiles/waybar/fortuna_config.jsonc
+  CONFIG=~/.config/waybar/fortuna_config.jsonc
   ;;
 "leviathan")
-  CONFIG=~/dotfiles/waybar/leviathan_config
+  CONFIG=~/.config/waybar/leviathan_config
   ;;
 *)
   echo "Unknown hostname: $HOSTNAME"
@@ -34,7 +34,7 @@ case "$HOSTNAME" in
 esac
 
 # Style path
-STYLE=~/dotfiles/waybar/style.css
+STYLE=~/.config/waybar/style.css
 
 # Checks if config file exists
 if [[ -f "$CONFIG" ]]; then

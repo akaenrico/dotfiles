@@ -6,11 +6,13 @@
   // "width": 1920, // Leave blank for dynamic value
   
   // Modules Configuration
-  "include": ["~/dotfiles/waybar/modules.json"],
+  "include": ["~/.config/waybar/modules.json"],
 
   // Module division
   // Left Modules
-  "modules-left": [],
+  "modules-left": [
+    "pulseaudio"
+  ],
 
   // Center Modules
   "modules-center": [
